@@ -19,3 +19,4 @@ struct CircleImage_Previews: PreviewProvider {
         CircleImage()
     }
 }
+//github連携テストコミット
