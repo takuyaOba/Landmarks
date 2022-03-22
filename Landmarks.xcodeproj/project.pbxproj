@@ -30,6 +30,7 @@
 		06A1386527E8D35500A13F26 /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06A1385727E8D35500A13F26 /* chilkoottrail.jpg */; };
 		06A1386627E8D35500A13F26 /* rainbowlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06A1385827E8D35500A13F26 /* rainbowlake.jpg */; };
 		06A1386827E8D3A200A13F26 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1386727E8D3A200A13F26 /* CircleImage.swift */; };
+		06A1386A27E9F6F200A13F26 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1386927E9F6F200A13F26 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		06A1385727E8D35500A13F26 /* chilkoottrail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chilkoottrail.jpg; sourceTree = "<group>"; };
 		06A1385827E8D35500A13F26 /* rainbowlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rainbowlake.jpg; sourceTree = "<group>"; };
 		06A1386727E8D3A200A13F26 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		06A1386927E9F6F200A13F26 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				06A1381A27E8D28B00A13F26 /* AppDelegate.swift */,
 				06A1381C27E8D28B00A13F26 /* SceneDelegate.swift */,
 				06A1381E27E8D28B00A13F26 /* ContentView.swift */,
+				06A1386927E9F6F200A13F26 /* MapView.swift */,
 				06A1382027E8D28F00A13F26 /* Assets.xcassets */,
 				06A1382527E8D28F00A13F26 /* LaunchScreen.storyboard */,
 				06A1382827E8D28F00A13F26 /* Info.plist */,
@@ -337,6 +340,7 @@
 			files = (
 				06A1381B27E8D28B00A13F26 /* AppDelegate.swift in Sources */,
 				06A1386827E8D3A200A13F26 /* CircleImage.swift in Sources */,
+				06A1386A27E9F6F200A13F26 /* MapView.swift in Sources */,
 				06A1381D27E8D28B00A13F26 /* SceneDelegate.swift in Sources */,
 				06A1381F27E8D28B00A13F26 /* ContentView.swift in Sources */,
 			);
