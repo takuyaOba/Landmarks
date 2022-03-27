@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    @EnvironmentObject var userData: UserData
     var body: some View {
         VStack {
             MapView()
@@ -40,5 +41,6 @@ struct LandmarkDetail: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         LandmarkDetail()
+            .environmentObject(UserData())
     }
 }
