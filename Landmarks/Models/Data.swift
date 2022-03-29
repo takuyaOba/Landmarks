@@ -5,6 +5,14 @@ import CoreLocation
 let landmarkData: [Landmark] = load("landmarkData.json")
 let hikeData: [Hike] = load("hikeData.json")
 
+var categoriesData: [String: [Landmark]] {
+    // Category => [Landmark] という連想配列 (辞書型変数) を定義
+    Dictionary(
+        grouping: landmarkData,         // landmarkDataに対して，
+        by: { $0.category.rawValue }    // 列挙型 (enum) のカテゴリのrawValue (実際の値) を使ってグループ化
+    )
+}
+
  
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
