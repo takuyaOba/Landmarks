@@ -8,19 +8,25 @@
 
 import SwiftUI
 
+import SwiftUI
+ 
 struct CategoryHome: View {
     @EnvironmentObject var userData: UserData
     var body: some View {
         NavigationView{
         List {
             ForEach(userData.categories.keys.sorted(), id: \.self) { key in
-                Text(key)
+                CategoryRow(categoryName: key, items: self.userData.categories[key]!)
+                }
             }
-        }
             .navigationBarTitle("Featured")
         }
     }
 }
+
+
+
+
 
 struct CategoryHome_Previews: PreviewProvider {
     static var previews: some View {
@@ -28,3 +34,4 @@ struct CategoryHome_Previews: PreviewProvider {
             .environmentObject(UserData())
         }
 }
+
