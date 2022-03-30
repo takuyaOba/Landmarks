@@ -5,6 +5,10 @@ import CoreLocation
 let landmarkData: [Landmark] = load("landmarkData.json")
 let hikeData: [Hike] = load("hikeData.json")
 
+var featuresData: [Landmark] {
+    landmarkData.filter { $0.isFeatured }
+}
+
 var categoriesData: [String: [Landmark]] {
     // Category => [Landmark] という連想配列 (辞書型変数) を定義
     Dictionary(
