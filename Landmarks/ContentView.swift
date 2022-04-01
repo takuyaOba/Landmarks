@@ -1,11 +1,3 @@
-//
-//  ContentView.swift
-//  Landmarks
-//
-//  Created by mt-square.toba on 2022/03/30.
-//  Copyright © 2022 takuyaOba. All rights reserved.
-//
-
 import SwiftUI
  
 struct ContentView: View {
@@ -18,12 +10,27 @@ struct ContentView: View {
     }
     
     var body: some View {
-        TabView(selection: $selection) {  // タブビュー：@State属性を扱う場合は $ を付与
+        TabView(selection: $selection) {
             CategoryHome()
-                .tag(Tab.featured)  // selectionが Tab.feturedのとき
+                .tabItem {
+                    Image(systemName: "star")
+                    
+                }
+                
+                .tag(Tab.featured)
  
             LandmarkList()
-                .tag(Tab.list)  // selectionが Tab.listのとき
+                .tabItem {
+                    Image(systemName: "list.dash")
+                }
+                .tag(Tab.list)
         }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environmentObject(UserData())
     }
 }
