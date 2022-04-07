@@ -14,7 +14,6 @@ struct ContentView: View {
             CategoryHome()
                 .tabItem {
                     Image(systemName: "star")
-                    
                 }
                 
                 .tag(Tab.featured)
