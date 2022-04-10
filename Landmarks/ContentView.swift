@@ -29,7 +29,12 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .environmentObject(UserData())
+        Group {
+            ContentView()
+                .previewDisplayName("n1")
+                .preferredColorScheme(.dark)
+                .previewDevice("iPhone 11 Pro Max")
+                .environmentObject(UserData())
+        }
     }
 }
